@@ -4,6 +4,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+body{
+    height: 100%;
+}
 header{
     height: 75vh;
     width: 100%;
