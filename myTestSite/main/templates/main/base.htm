@@ -3,14 +3,33 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <title>{% block title %}Ice Site{% endblock %}</title>
+    <title>{% block title %}Web Site{% endblock %}</title>
     {% load static %}
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
 </head>
 <body>
+    <nav class="navbar navbar-expand-sm justify-content-around bg-dark fixed-top">
+        <a href="/"><img src="{% static 'images/logo.png' %}" id="base-logo"></a>
+        <form class="form-inline" action="#" id="form-base-search">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <button class="btn btn-success" type="submit">Search</button>
+              </div>
+              <input type="text" class="form-control" placeholder="Search">
+            </div>
+        </form>
+        <ul class="navbar-nav">
+            <li class="nav-item"><a href="/" class="nav-link" id="nav-bar-base">Home</a></li>
+            <li class="nav-item"><a href="create/" class="nav-link" id="nav-bar-base">Create</a></li>
+            <li class="nav-item"><a href="#" class="nav-link" id="nav-bar-base">three</a></li>
+            <li class="nav-item"><a href="#" class="nav-link" id="nav-bar-base">four</a></li>
+            <li class="nav-item"><a href="#" class="nav-link" id="nav-bar-base">five</a></li>
+        </ul>
+    </nav>
     <div>
         {% block content %}
 

@@ -4,43 +4,30 @@
 {% block title %}
 Home Page
 {% endblock %}
-
 {% block content %}
-    <header>
-        <nav>
-            <a href="/"><img src="{% static 'images/logo.png' %}"></a>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="create/">Create</a></li>
-                <li><a href="#">three</a></li>
-                <li><a href="#">four</a></li>
-                <li><a href="#">five</a></li>
-            </ul>
-        </nav>
-        <div class="text-box">
-            <h1>แหล่งรวมช่างมืออาชีพ</h1>
-            <p>พร้อมทำงานให้คุณได้ทันที</p>
-            <a href="#">เริ่มต้นจ้างช่าง</a>
+<div id="container">
+    <div id="text-box">
+        <h1>แหล่งรวมช่างมืออาชีพ</h1>
+        <p>พร้อมทำงานให้คุณได้ทันที</p>
+        <a href="#">เริ่มต้นจ้างช่าง</a>
+    </div>
+</div>
+    <!--<div class="container">
+        <div class="work">
+            <a href="#"><img src="{% static 'images/engineer.jpg' %}"></a>
+            <h3>ช่างไฟ</h3>
         </div>
-    </header>
-    <section class="worker">
-        <div class="container">
-            <div class="work">
-                <a href="#"><img src="{% static 'images/engineer.jpg' %}"></a>
-                <h3>ช่างไฟ</h3>
-            </div>
-            <div class="work">
-                <a href="#"><img src="{% static 'images/engineer.jpg' %}"></a>
-                <h3>ช่างปะปา</h3>
-            </div>
-            <div class="work">
-                <a href="#"><img src="{% static 'images/engineer.jpg' %}"></a>
-                <h3>ช่างไม้</h3>
-            </div>
-            <div class="work">
-                <a href="#"><img src="{% static 'images/engineer.jpg' %}"></a>
-                <h3>ช่างแอร์</h3>
-            </div>
+        <div class="work">
+            <a href="#"><img src="{% static 'images/engineer.jpg' %}"></a>
+            <h3>ช่างปะปา</h3>
         </div>
-    </section>
+        <div class="work">
+            <a href="#"><img src="{% static 'images/engineer.jpg' %}"></a>
+            <h3>ช่างไม้</h3>
+        </div>
+        <div class="work">
+            <a href="#"><img src="{% static 'images/engineer.jpg' %}"></a>
+            <h3>ช่างแอร์</h3>
+        </div>
+    </div>-->
 {% endblock %}
