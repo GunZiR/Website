@@ -8,8 +8,8 @@ from .forms import CreateNewList
 
 # Create your views here.
 
-def index(response, name):
-    ls = ToDoList.objects.get(name=name)
+def index(response, id):
+    ls = ToDoList.objects.get(id=id)
 
     if response.method == 'POST':
         print(response.POST)

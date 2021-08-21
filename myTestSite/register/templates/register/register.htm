@@ -1,0 +1,21 @@
+{% extends "main/base.htm" %}
+
+{% block title %}Register{% endblock %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-7">
+                <h1 class="mt-2">Register to site</h1>
+                <hr class="mt-0 mb-4">
+                <form method="POST" class="form-group">
+                    {% csrf_token %}
+                    {{form|crispy}}
+                    <button type="submit" class="btn btn-success">Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+{% endblock %}
