@@ -1,0 +1,22 @@
+{% extends "main/base.htm" %}
+
+{% block title %}Views page{% endblock %}
+
+{% block content %}
+    {% if user.is_authenticated %}
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-7">
+                    <h1 class="mt-2">Hi {{user.username}}</h1>
+                    <hr class="mt-0 mb-4">
+                    <p>email : {{user.email}}</p>
+                    <p>line id : {{user.line_id}}</p>
+                    <p>facebook : {{user.facebook}}</p>
+                    <p>twitter : {{user.twitter}}</p>
+                </div>
+            </div>
+        </div>
+    {% else %}
+        <p>Please Login First</p>
+    {% endif %}
+{% endblock %}
